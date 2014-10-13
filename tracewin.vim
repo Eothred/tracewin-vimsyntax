@@ -20,10 +20,10 @@ syn match celNumber '\d\+\.\d*'
 syn match celNumber '[-+]\d\+\.\d*'
 
 syntax keyword twElements DRIFT QUAD DTL_CEL nextgroup=twElementLength skipwhite
-syntax keyword twWarnStatements END STEERER
-"syntax clear
-syntax match twComment /;.*$/
+syntax keyword twWarnStatements STEERER
+
 syntax region twAfterEnd start='END' end='\%$'
+syntax match twComment /;.*$/
 
 " Tell VIM how to colour different stuff:
 hi def link twComment Comment
@@ -31,4 +31,4 @@ hi def link twAfterEnd Comment
 hi def link twElements Statement
 hi def link twElementLength Constant
 hi def link twElementAttr PreProc
-hi def link twWarnStatements WarningMsg
+ hi def link twWarnStatements WarningMsg
