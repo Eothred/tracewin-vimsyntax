@@ -5,9 +5,12 @@
 
 " Usage:
 " au BufNewFile,BufRead *.dat setf tracewin
+
 if exists("b:current_syntax")
   finish
 endif
+
+syntax case ignore
 
 syntax match twElementLength '\d\+' contained nextgroup=twElementAttr
 syntax match twElementLength '\d\+\.\d*' contained nextgroup=twElementAttr
