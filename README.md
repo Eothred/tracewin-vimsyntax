@@ -6,7 +6,7 @@ You can install this file manually
 or (recommended), use [vundle](https://github.com/gmarik/Vundle.vim):
 
 ```
-Plugin 'Eothred/tracewinsyntax'
+Plugin 'https://bitbucket.org/eothred/tracewin-vimsyntax.git'
 ```
 
 In either case, you need to recognize the right formats by adding to ~/.vimrc:
