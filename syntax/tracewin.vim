@@ -24,9 +24,9 @@ syntax keyword twFieldMap FIELD_MAP nextgroup=twFieldMapType skipwhite
 
 syntax keyword twCommands STEERER ADJUST_STEERER SET_BEAM_PHASE_ERROR ADJUST PLOT_DST SET_ADV nextgroup=twCommandAttr
 syntax keyword twElements DRIFT QUAD DTL_CEL nextgroup=twElementLength skipwhite
-syntax keyword twElementsNoLength LATTICE FREQ MATCH_FAM_PHASE MATCH_FAM_GRAD MIN_PHASE_VARIATION DIAG_POSITION GAP THIN_STEERING nextgroup=twElementAttr
+syntax keyword twElementsNoLength LATTICE LATTICE_END FREQ MATCH_FAM_PHASE MATCH_FAM_GRAD MIN_PHASE_VARIATION DIAG_POSITION GAP THIN_STEERING nextgroup=twElementAttr
 
-syntax region twAfterEnd start='END' end='\%$'
+syntax region twAfterEnd start='^ *END' end='\%$'
 syntax match twComment /;.*$/
 
 " Tell VIM how to colour different stuff:
