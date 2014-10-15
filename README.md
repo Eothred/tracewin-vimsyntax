@@ -3,7 +3,7 @@ TraceWin Syntax File
 
 Usage:
 You can install this file manually
-or (recommended), use [https://github.com/gmarik/Vundle.vim](vundle):
+or (recommended), use [vundle](https://github.com/gmarik/Vundle.vim):
 
 ```
 Plugin 'Eothred/tracewinsyntax'
