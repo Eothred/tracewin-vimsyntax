@@ -10,7 +10,7 @@ Plugin 'https://bitbucket.org/eothred/tracewin-vimsyntax.git'
 Then after you execute `:PluginInstall` to install the plugin, and later on `:PluginUpdate` to update all plugins.
 
 Alternatively, you can install the syntax file manually. If you do, you need to detect
-filetype yourself (see below). Add the following to your .vimrc:
+filetype yourself, by adding the following to your .vimrc:
 ```
 au BufNewFile,BufRead *.dat setf tracewin
 ```
