@@ -5,7 +5,7 @@ Usage:
 
 It is recommended to simply use [vundle](https://github.com/gmarik/Vundle.vim) for this plugin. You add the following line to your .vimrc:
 ```
-Plugin 'https://bitbucket.org/eothred/tracewin-vimsyntax.git'
+Plugin 'Eothred/tracewin-vimsyntax'
 ```
 Then after you execute `:PluginInstall` to install the plugin, and later on `:PluginUpdate` to update all plugins.
 
@@ -14,3 +14,4 @@ filetype yourself, by adding the following to your .vimrc:
 ```
 au BufNewFile,BufRead *.dat setf tracewin
 ```
+
